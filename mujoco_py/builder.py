@@ -315,6 +315,7 @@ class MacExtensionBuilder(MujocoExtensionBuilder):
         if not os.environ.get('CC'):
             # Known-working versions of GCC on mac (prefer latest one)
             c_compilers = [
+                '/usr/local/bin/gcc-11',
                 '/usr/local/bin/gcc-9',
                 '/usr/local/bin/gcc-8',
                 '/usr/local/bin/gcc-7',
